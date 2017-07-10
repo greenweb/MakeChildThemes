@@ -1,0 +1,127 @@
+/**
+ * Theme Name:  ELS a Make child theme
+ * Theme URI:   http://www.greenvilleweb.com
+ * Author:      greenweb
+ * Author URI:  http://www.greenvilleweb.com
+ * Description: Create your website without touching a line of code. Make's flexible customization features and a powerful drag and drop page builder make designing your site fun and easy. Build almost anything: a simple portfolio or photography site, an ecommerce business site, a minimalist blog, or even a professional magazine. You'll start by customizing your background, layouts, fonts, colors, and logo. Next, add and organize your content using the drag and drop page builder. Add a photo, a video, a gallery, or even a slider to any page on your website. Make is responsive, so your website will naturally look great on phones, tablets, and desktop screens. It's also fully compatible with popular plugins like WooCommerce, Gravity Forms, Contact Form 7, Jetpack, and WP PageNavi.
+ * Version:     1.1.0
+ * License:     GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: make
+ * Text Domain: make-child
+ * Domain Path: /languages/
+ * Tags:        black, blue, green, gray, orange, red, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+ *
+ * ELS a Make child theme, Copyright 2017 Greenville Web Design
+ * and is distributed under the terms of the GNU GPL
+ */
+
+/*
+ * Add your custom styles below.
+ * This version of the Make child theme is only compatible with Make 1.6.0 and above.
+ */
+.header-widget{
+	float: none;
+	display: none;
+}
+@media screen and (min-width: 800px) {
+
+  .entry-content iframe[src*="google.com/maps"].els_google_map  {
+     height: 350px;
+  }
+
+  .entry-content iframe[src*="google.com/maps"].els_google_map {
+    width: 100%;
+    /*height: 300px;*/
+  }
+  .header-widget{
+  	 display: inline-block;
+    float: right;
+    text-align: left;
+  }
+  header.header-layout-4{
+    width:100%;
+  }
+  .header-layout-4 .site-navigation {
+      float: left;
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+  }
+	header.header-layout-4 .site-navigation .menu,
+  header.header-layout-4 .header-bar .container{
+    max-width: 1024px;
+		margin:0 auto;
+	}
+  .header-bar input[type="search"]{
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+	header.header-layout-4 nav.site-navigation{
+		background-color: #68ab4d;
+	}
+	header.header-layout-4 .container {
+		padding: 0;
+		max-width: 100%;
+	}
+
+	header.header-layout-4 .container > div,
+	header.header-layout-4 .container > span {
+		padding: 0;
+	}
+
+  header.header-layout-4 .site-navigation .menu  a{
+  color:#fff;
+  }
+  header.header-layout-4 .site-navigation .menu  a:hover{
+  background-color:#07237d;
+  }
+  .els-logo-slider, .builder-section-gallery.builder-section-full-width .builder-section-content, 
+  .builder-section-text.builder-section-full-width .builder-section-content, 
+  .builder-section-blank.builder-section-full-width .builder-section-content {
+    max-width:1024px;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+
+/*remove space at top*/
+.site-header-main {
+    padding: 0;
+}
+.site-branding{text-align: center;}
+.builder-section-panels .ui-state-default, .builder-section-panels .ui-widget-content .ui-state-default, .builder-section-panels .ui-widget-header .ui-state-default {
+    border: 1px solid #eaecee;
+    color: #fff;
+    background: #68ab4d;
+}
+
+
+/*SLIDER*/
+.royalSlider,
+.royalSlider .rsOverflow,
+.royalSlider .rsSlide,
+.royalSlider .rsVideoFrameHolder,
+.royalSlider .rsThumbs {
+    background: #ffffff !important;
+}
+.slide-c-white h3 {
+  color:#ffffff;
+  font-size:2.2em;
+  font-weight:400;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.custom-logo{
+margin-top:10px;
+}
+.site-description{
+margin-bottom:0px;
+}
+.site-main{
+    background: url(backgd-optimized.gif) no-repeat 50% 0/450px;
+}
